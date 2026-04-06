@@ -1,0 +1,173 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/04/06 18:51:10 INFO SparkContext: Running Spark version 4.1.1
+26/04/06 18:51:10 INFO SparkContext: OS info Linux, 6.17.0-1008-azure, amd64
+26/04/06 18:51:10 INFO SparkContext: Java version 17.0.18+8-Ubuntu-124.04.1
+26/04/06 18:51:10 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/04/06 18:51:10 INFO ResourceUtils: ==============================================================
+26/04/06 18:51:10 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/04/06 18:51:10 INFO ResourceUtils: ==============================================================
+26/04/06 18:51:10 INFO SparkContext: Submitted application: FlightDelay_ML
+26/04/06 18:51:10 INFO SecurityManager: Changing view acls to: hadoopuser
+26/04/06 18:51:10 INFO SecurityManager: Changing modify acls to: hadoopuser
+26/04/06 18:51:10 INFO SecurityManager: Changing view acls groups to: hadoopuser
+26/04/06 18:51:10 INFO SecurityManager: Changing modify acls groups to: hadoopuser
+26/04/06 18:51:10 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: hadoopuser groups with view permissions: EMPTY; users with modify permissions: hadoopuser; groups with modify permissions: EMPTY; RPC SSL disabled
+26/04/06 18:51:11 INFO Utils: Successfully started service 'sparkDriver' on port 37161.
+26/04/06 18:51:11 INFO SparkEnv: Registering MapOutputTracker
+26/04/06 18:51:11 INFO SparkEnv: Registering BlockManagerMaster
+26/04/06 18:51:11 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/04/06 18:51:11 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/04/06 18:51:11 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/04/06 18:51:11 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-9015ca89-085a-4afe-aaea-9ac239fad283
+26/04/06 18:51:11 INFO SparkEnv: Registering OutputCommitCoordinator
+26/04/06 18:51:11 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/04/06 18:51:11 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/04/06 18:51:11 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 3072, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/04/06 18:51:11 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+26/04/06 18:51:11 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/04/06 18:51:11 INFO SecurityManager: Changing view acls to: hadoopuser
+26/04/06 18:51:11 INFO SecurityManager: Changing modify acls to: hadoopuser
+26/04/06 18:51:11 INFO SecurityManager: Changing view acls groups to: hadoopuser
+26/04/06 18:51:11 INFO SecurityManager: Changing modify acls groups to: hadoopuser
+26/04/06 18:51:11 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: hadoopuser groups with view permissions: EMPTY; users with modify permissions: hadoopuser; groups with modify permissions: EMPTY; RPC SSL disabled
+26/04/06 18:51:11 INFO DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at hadoop-master/10.0.0.4:8032
+26/04/06 18:51:12 INFO Configuration: resource-types.xml not found
+26/04/06 18:51:12 INFO ResourceUtils: Unable to find 'resource-types.xml'.
+26/04/06 18:51:12 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (8192 MB per container)
+26/04/06 18:51:12 INFO Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+26/04/06 18:51:12 INFO Client: Setting up container launch context for our AM
+26/04/06 18:51:12 INFO Client: Setting up the launch environment for our AM container
+26/04/06 18:51:12 INFO Client: Preparing resources for our AM container
+26/04/06 18:51:12 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+26/04/06 18:51:14 INFO Client: Uploading resource file:/tmp/spark-a953a6e0-1a5c-4fca-80af-ff4cd042f53b/__spark_libs__18481130240042021.zip -> hdfs://hadoop-master:9000/user/hadoopuser/.sparkStaging/application_1775498118473_0007/__spark_libs__18481130240042021.zip
+26/04/06 18:51:17 INFO Client: Uploading resource file:/home/hadoopuser/myenv/lib/python3.12/site-packages/pyspark/python/lib/pyspark.zip -> hdfs://hadoop-master:9000/user/hadoopuser/.sparkStaging/application_1775498118473_0007/pyspark.zip
+26/04/06 18:51:17 INFO Client: Uploading resource file:/home/hadoopuser/myenv/lib/python3.12/site-packages/pyspark/python/lib/py4j-0.10.9.9-src.zip -> hdfs://hadoop-master:9000/user/hadoopuser/.sparkStaging/application_1775498118473_0007/py4j-0.10.9.9-src.zip
+26/04/06 18:51:17 INFO Client: Uploading resource file:/tmp/spark-a953a6e0-1a5c-4fca-80af-ff4cd042f53b/__spark_conf__16897458232682251418.zip -> hdfs://hadoop-master:9000/user/hadoopuser/.sparkStaging/application_1775498118473_0007/__spark_conf__.zip
+26/04/06 18:51:18 INFO SecurityManager: Changing view acls to: hadoopuser
+26/04/06 18:51:18 INFO SecurityManager: Changing modify acls to: hadoopuser
+26/04/06 18:51:18 INFO SecurityManager: Changing view acls groups to: hadoopuser
+26/04/06 18:51:18 INFO SecurityManager: Changing modify acls groups to: hadoopuser
+26/04/06 18:51:18 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: hadoopuser groups with view permissions: EMPTY; users with modify permissions: hadoopuser; groups with modify permissions: EMPTY; RPC SSL disabled
+26/04/06 18:51:18 INFO Client: Submitting application application_1775498118473_0007 to ResourceManager
+26/04/06 18:51:18 INFO YarnClientImpl: Submitted application application_1775498118473_0007
+26/04/06 18:51:19 INFO Client: Application report for application_1775498118473_0007 (state: ACCEPTED)
+26/04/06 18:51:19 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1775501478334
+	 final status: UNDEFINED
+	 tracking URL: http://hadoop-master:8088/proxy/application_1775498118473_0007/
+	 user: hadoopuser
+26/04/06 18:51:24 INFO Client: Application report for application_1775498118473_0007 (state: RUNNING)
+26/04/06 18:51:24 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.0.6
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1775501478334
+	 final status: UNDEFINED
+	 tracking URL: http://hadoop-master:8088/proxy/application_1775498118473_0007/
+	 user: hadoopuser
+26/04/06 18:51:24 INFO YarnClientSchedulerBackend: Application application_1775498118473_0007 has started running.
+26/04/06 18:51:24 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42087.
+26/04/06 18:51:24 INFO NettyBlockTransferService: Server created on hadoop-master:42087
+26/04/06 18:51:24 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/04/06 18:51:24 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, hadoop-master, 42087, None)
+26/04/06 18:51:24 INFO BlockManagerMasterEndpoint: Registering block manager hadoop-master:42087 with 1048.8 MiB RAM, BlockManagerId(driver, hadoop-master, 42087, None)
+26/04/06 18:51:24 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, hadoop-master, 42087, None)
+26/04/06 18:51:24 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, hadoop-master, 42087, None)
+26/04/06 18:51:24 INFO YarnClientSchedulerBackend: Add WebUI Filter. org.apache.spark.deploy.yarn.AmIpFilter, Map(PROXY_HOSTS -> hadoop-master, PROXY_URI_BASES -> http://hadoop-master:8088/proxy/application_1775498118473_0007), /proxy/application_1775498118473_0007
+26/04/06 18:51:25 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+26/04/06 18:51:28 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.6:38116) with ID 2, ResourceProfileId 0
+26/04/06 18:51:29 INFO BlockManagerMasterEndpoint: Registering block manager hadoop-slave2:41687 with 1663.2 MiB RAM, BlockManagerId(2, hadoop-slave2, 41687, None)
+26/04/06 18:51:34 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.5:42650) with ID 3, ResourceProfileId 0
+26/04/06 18:51:34 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.5:42664) with ID 1, ResourceProfileId 0
+26/04/06 18:51:34 INFO BlockManagerMasterEndpoint: Registering block manager hadoop-slave1:43071 with 1663.2 MiB RAM, BlockManagerId(3, hadoop-slave1, 43071, None)
+26/04/06 18:51:35 INFO BlockManagerMasterEndpoint: Registering block manager hadoop-slave1:39973 with 1663.2 MiB RAM, BlockManagerId(1, hadoop-slave1, 39973, None)
+26/04/06 18:51:41 INFO YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000.0(ms)
+Total rows loaded: 5,559,465
+Rows after filtering nulls in targets: 5,445,526
+Rows after dropna on safe features: 4,129,222
+
+Class balance (label = delayed 15+ min):
++-----+-------+
+|label|  count|
++-----+-------+
+|  0.0|3206699|
+|  1.0| 922523|
++-----+-------+
+
+
+Train rows : 3,303,564
+Test rows  : 825,658
+
+============================================================
+MODEL A: Random Forest Classifier — delayed 15+ min?
+============================================================
+Training classifier...
+26/04/06 18:54:28 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+26/04/06 18:57:28 WARN DAGScheduler: Broadcasting large task binary with size 1498.6 KiB
+26/04/06 18:58:11 WARN DAGScheduler: Broadcasting large task binary with size 2.8 MiB
+26/04/06 18:59:01 WARN DAGScheduler: Broadcasting large task binary with size 5.6 MiB
+26/04/06 19:00:03 WARN DAGScheduler: Broadcasting large task binary with size 1087.1 KiB
+26/04/06 19:00:10 WARN DAGScheduler: Broadcasting large task binary with size 3.1 MiB
+26/04/06 19:00:36 WARN DAGScheduler: Broadcasting large task binary with size 3.1 MiB
+26/04/06 19:00:57 WARN DAGScheduler: Broadcasting large task binary with size 3.1 MiB
+
+  AUC-ROC            : 0.9319
+  Accuracy           : 0.9205
+  F1 Score           : 0.9173
+
+  Saved: plot_07_feature_importance_clf.png
+
+============================================================
+MODEL B: Logistic Regression Classifier (comparison)
+============================================================
+Training logistic regression...
+26/04/06 19:02:56 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+
+  AUC-ROC  : 0.9310
+  Accuracy : 0.9104
+  F1 Score : 0.9032
+
+============================================================
+MODEL C: Random Forest Regressor — predict ARR_DELAY (minutes)
+============================================================
+Training regressor...
+26/04/06 19:07:37 WARN DAGScheduler: Broadcasting large task binary with size 1007.4 KiB
+26/04/06 19:08:14 WARN DAGScheduler: Broadcasting large task binary with size 2025.7 KiB
+26/04/06 19:09:02 WARN DAGScheduler: Broadcasting large task binary with size 4.0 MiB
+26/04/06 19:10:07 WARN DAGScheduler: Broadcasting large task binary with size 5.3 MiB
+26/04/06 19:10:54 WARN DAGScheduler: Broadcasting large task binary with size 3.0 MiB
+
+  RMSE : 18.26 minutes
+  MAE  : 9.80 minutes
+  R²   : 0.8751
+  Saved: plot_08_actual_vs_predicted.png
+
+============================================================
+MODEL COMPARISON SUMMARY
+============================================================
+  Model                                  AUC  Accuracy      F1
+  ------------------------------------------------------------
+  RF Classifier                       0.9319    0.9205  0.9173
+  Logistic Regression                 0.9310    0.9104  0.9032
+
+  RF Regressor (ARR_DELAY minutes):
+    RMSE=18.26  MAE=9.80  R²=0.8751
+
+Saved: plot_09_model_comparison.png
+
+Saving predictions to HDFS...
+26/04/06 19:12:47 WARN DAGScheduler: Broadcasting large task binary with size 3.3 MiB
+Classifier predictions -> hdfs:///flight_delay/output/clf_predictions
+Regressor  predictions -> hdfs:///flight_delay/output/reg_predictions
+
+============================================================
+ML COMPLETE — check ~/flight_analysis/ for all plots
+============================================================
