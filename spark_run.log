@@ -1,0 +1,408 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/04/06 18:26:14 INFO SparkContext: Running Spark version 4.1.1
+26/04/06 18:26:14 INFO SparkContext: OS info Linux, 6.17.0-1008-azure, amd64
+26/04/06 18:26:14 INFO SparkContext: Java version 17.0.18+8-Ubuntu-124.04.1
+26/04/06 18:26:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/04/06 18:26:14 INFO ResourceUtils: ==============================================================
+26/04/06 18:26:14 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/04/06 18:26:14 INFO ResourceUtils: ==============================================================
+26/04/06 18:26:14 INFO SparkContext: Submitted application: FlightDelay_EDA
+26/04/06 18:26:14 INFO SecurityManager: Changing view acls to: hadoopuser
+26/04/06 18:26:14 INFO SecurityManager: Changing modify acls to: hadoopuser
+26/04/06 18:26:14 INFO SecurityManager: Changing view acls groups to: hadoopuser
+26/04/06 18:26:14 INFO SecurityManager: Changing modify acls groups to: hadoopuser
+26/04/06 18:26:14 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: hadoopuser groups with view permissions: EMPTY; users with modify permissions: hadoopuser; groups with modify permissions: EMPTY; RPC SSL disabled
+26/04/06 18:26:14 INFO Utils: Successfully started service 'sparkDriver' on port 34485.
+26/04/06 18:26:14 INFO SparkEnv: Registering MapOutputTracker
+26/04/06 18:26:14 INFO SparkEnv: Registering BlockManagerMaster
+26/04/06 18:26:14 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/04/06 18:26:14 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/04/06 18:26:14 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/04/06 18:26:14 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-3d03d582-e2ba-4521-bd80-68c5141866c7
+26/04/06 18:26:14 INFO SparkEnv: Registering OutputCommitCoordinator
+26/04/06 18:26:15 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/04/06 18:26:15 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/04/06 18:26:15 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 3072, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/04/06 18:26:15 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+26/04/06 18:26:15 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/04/06 18:26:15 INFO SecurityManager: Changing view acls to: hadoopuser
+26/04/06 18:26:15 INFO SecurityManager: Changing modify acls to: hadoopuser
+26/04/06 18:26:15 INFO SecurityManager: Changing view acls groups to: hadoopuser
+26/04/06 18:26:15 INFO SecurityManager: Changing modify acls groups to: hadoopuser
+26/04/06 18:26:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: hadoopuser groups with view permissions: EMPTY; users with modify permissions: hadoopuser; groups with modify permissions: EMPTY; RPC SSL disabled
+26/04/06 18:26:15 INFO DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at hadoop-master/10.0.0.4:8032
+26/04/06 18:26:16 INFO Configuration: resource-types.xml not found
+26/04/06 18:26:16 INFO ResourceUtils: Unable to find 'resource-types.xml'.
+26/04/06 18:26:16 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (8192 MB per container)
+26/04/06 18:26:16 INFO Client: Will allocate AM container, with 896 MB memory including 384 MB overhead
+26/04/06 18:26:16 INFO Client: Setting up container launch context for our AM
+26/04/06 18:26:16 INFO Client: Setting up the launch environment for our AM container
+26/04/06 18:26:16 INFO Client: Preparing resources for our AM container
+26/04/06 18:26:16 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+26/04/06 18:26:18 INFO Client: Uploading resource file:/tmp/spark-181c192b-55c4-40ea-9bd8-1417e0de860d/__spark_libs__7994263583071849493.zip -> hdfs://hadoop-master:9000/user/hadoopuser/.sparkStaging/application_1775498118473_0004/__spark_libs__7994263583071849493.zip
+26/04/06 18:26:21 INFO Client: Uploading resource file:/home/hadoopuser/myenv/lib/python3.12/site-packages/pyspark/python/lib/pyspark.zip -> hdfs://hadoop-master:9000/user/hadoopuser/.sparkStaging/application_1775498118473_0004/pyspark.zip
+26/04/06 18:26:21 INFO Client: Uploading resource file:/home/hadoopuser/myenv/lib/python3.12/site-packages/pyspark/python/lib/py4j-0.10.9.9-src.zip -> hdfs://hadoop-master:9000/user/hadoopuser/.sparkStaging/application_1775498118473_0004/py4j-0.10.9.9-src.zip
+26/04/06 18:26:21 INFO Client: Uploading resource file:/tmp/spark-181c192b-55c4-40ea-9bd8-1417e0de860d/__spark_conf__7406059231076016620.zip -> hdfs://hadoop-master:9000/user/hadoopuser/.sparkStaging/application_1775498118473_0004/__spark_conf__.zip
+26/04/06 18:26:21 INFO SecurityManager: Changing view acls to: hadoopuser
+26/04/06 18:26:21 INFO SecurityManager: Changing modify acls to: hadoopuser
+26/04/06 18:26:21 INFO SecurityManager: Changing view acls groups to: hadoopuser
+26/04/06 18:26:21 INFO SecurityManager: Changing modify acls groups to: hadoopuser
+26/04/06 18:26:21 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: hadoopuser groups with view permissions: EMPTY; users with modify permissions: hadoopuser; groups with modify permissions: EMPTY; RPC SSL disabled
+26/04/06 18:26:21 INFO Client: Submitting application application_1775498118473_0004 to ResourceManager
+26/04/06 18:26:21 INFO YarnClientImpl: Submitted application application_1775498118473_0004
+26/04/06 18:26:22 INFO Client: Application report for application_1775498118473_0004 (state: ACCEPTED)
+26/04/06 18:26:22 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1775499981598
+	 final status: UNDEFINED
+	 tracking URL: http://hadoop-master:8088/proxy/application_1775498118473_0004/
+	 user: hadoopuser
+26/04/06 18:26:28 INFO Client: Application report for application_1775498118473_0004 (state: RUNNING)
+26/04/06 18:26:28 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.0.5
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1775499981598
+	 final status: UNDEFINED
+	 tracking URL: http://hadoop-master:8088/proxy/application_1775498118473_0004/
+	 user: hadoopuser
+26/04/06 18:26:28 INFO YarnClientSchedulerBackend: Application application_1775498118473_0004 has started running.
+26/04/06 18:26:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36839.
+26/04/06 18:26:28 INFO NettyBlockTransferService: Server created on hadoop-master:36839
+26/04/06 18:26:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/04/06 18:26:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, hadoop-master, 36839, None)
+26/04/06 18:26:28 INFO BlockManagerMasterEndpoint: Registering block manager hadoop-master:36839 with 1048.8 MiB RAM, BlockManagerId(driver, hadoop-master, 36839, None)
+26/04/06 18:26:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, hadoop-master, 36839, None)
+26/04/06 18:26:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, hadoop-master, 36839, None)
+26/04/06 18:26:28 INFO YarnClientSchedulerBackend: Add WebUI Filter. org.apache.spark.deploy.yarn.AmIpFilter, Map(PROXY_HOSTS -> hadoop-master, PROXY_URI_BASES -> http://hadoop-master:8088/proxy/application_1775498118473_0004), /proxy/application_1775498118473_0004
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /jobs: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /jobs/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /jobs/job: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /jobs/job/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages/stage: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages/stage/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages/pool: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages/pool/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages/taskThreadDump: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages/taskThreadDump/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /storage: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /storage/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /storage/rdd: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /storage/rdd/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /environment: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /environment/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /executors: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /executors/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /executors/threadDump: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /executors/threadDump/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /executors/heapHistogram: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /executors/heapHistogram/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /static: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /api: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /metrics: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /jobs/job/kill: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /stages/stage/kill: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:28 INFO ServerInfo: Adding filter to /metrics/json: org.apache.spark.deploy.yarn.AmIpFilter
+26/04/06 18:26:29 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark-client://YarnAM)
+26/04/06 18:26:33 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.5:43880) with ID 1, ResourceProfileId 0
+26/04/06 18:26:33 INFO BlockManagerMasterEndpoint: Registering block manager hadoop-slave1:32823 with 1663.2 MiB RAM, BlockManagerId(1, hadoop-slave1, 32823, None)
+26/04/06 18:26:38 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.6:33828) with ID 3, ResourceProfileId 0
+26/04/06 18:26:38 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.0.0.6:33812) with ID 2, ResourceProfileId 0
+26/04/06 18:26:39 INFO BlockManagerMasterEndpoint: Registering block manager hadoop-slave2:39175 with 1663.2 MiB RAM, BlockManagerId(3, hadoop-slave2, 39175, None)
+26/04/06 18:26:39 INFO BlockManagerMasterEndpoint: Registering block manager hadoop-slave2:37381 with 1663.2 MiB RAM, BlockManagerId(2, hadoop-slave2, 37381, None)
+26/04/06 18:26:45 INFO YarnClientSchedulerBackend: SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000.0(ms)
+============================================================
+SCHEMA
+============================================================
+root
+ |-- MONTH: integer (nullable = true)
+ |-- DAY_OF_MONTH: integer (nullable = true)
+ |-- FL_DATE: date (nullable = true)
+ |-- MKT_CARRIER: string (nullable = true)
+ |-- OP_CARRIER: string (nullable = true)
+ |-- ORIGIN: string (nullable = true)
+ |-- DEST: string (nullable = true)
+ |-- DEP_DELAY: integer (nullable = true)
+ |-- DEP_DELAY_NEW: double (nullable = true)
+ |-- DEP_DEL15: double (nullable = true)
+ |-- ARR_DELAY: double (nullable = true)
+ |-- ARR_DELAY_NEW: double (nullable = true)
+ |-- ARR_DEL15: double (nullable = true)
+ |-- CRS_ELAPSED_TIME: double (nullable = true)
+ |-- ACTUAL_ELAPSED_TIME: double (nullable = true)
+ |-- AIR_TIME: double (nullable = true)
+ |-- DISTANCE: integer (nullable = true)
+ |-- CARRIER_DELAY: double (nullable = true)
+ |-- WEATHER_DELAY: double (nullable = true)
+ |-- NAS_DELAY: double (nullable = true)
+ |-- SECURITY_DELAY: double (nullable = true)
+ |-- LATE_AIRCRAFT_DELAY: double (nullable = true)
+ |-- CRS_DEP_1hrpre: string (nullable = true)
+ |-- CRS_DEP_1hrpost: string (nullable = true)
+ |-- DEP_1hrpre_num: integer (nullable = true)
+ |-- DEP_1hrpost_num: integer (nullable = true)
+ |-- Arr_1hrpre_num: integer (nullable = true)
+ |-- Arr_1hrpost_num: integer (nullable = true)
+ |-- max_temp_f: integer (nullable = true)
+ |-- min_temp_f: integer (nullable = true)
+ |-- max_dewpoint_f: double (nullable = true)
+ |-- min_dewpoint_f: double (nullable = true)
+ |-- precip_in: double (nullable = true)
+ |-- avg_wind_speed_kts: double (nullable = true)
+ |-- snow_in: double (nullable = true)
+ |-- avg_feel: double (nullable = true)
+ |-- FAA_class: string (nullable = true)
+ |-- scheduled_Turnarnd: double (nullable = true)
+ |-- Actual_Turnarnd: double (nullable = true)
+ |-- Diff_in_turnarnd: double (nullable = true)
+ |-- longTurnaround: integer (nullable = true)
+ |-- Scheduled_DEP: string (nullable = true)
+ |-- Scheduled_ARR_Ori: string (nullable = true)
+ |-- Actual_ARR_dt_Ori: string (nullable = true)
+ |-- Scheduled_DEP_EST: string (nullable = true)
+ |-- Actual_DEP_dt_EST: string (nullable = true)
+ |-- Scheduled_ARR_EST: string (nullable = true)
+ |-- Actual_ARR_dt_EST: string (nullable = true)
+ |-- Scheduled_ARR_Local: string (nullable = true)
+ |-- Actual_ARR_dt_Local: string (nullable = true)
+ |-- late_airjet_when_turnaround_within_180: integer (nullable = true)
+ |-- affected_turnaround_lessthan120: integer (nullable = true)
+ |-- affected_turnaround_lessthan90: integer (nullable = true)
+ |-- affected_turnaround_lessthan60: integer (nullable = true)
+ |-- affected_turnaround_lessthan45: integer (nullable = true)
+ |-- day_of_week: string (nullable = true)
+
+
+Total rows : 5,559,465
+Total cols : 56
+
+============================================================
+NULL COUNTS PER COLUMN
+============================================================
+26/04/06 18:27:18 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+-RECORD 0-------------------------------------
+ MONTH                                  | 0   
+ DAY_OF_MONTH                           | 0   
+ FL_DATE                                | 0   
+ MKT_CARRIER                            | 0   
+ OP_CARRIER                             | 0   
+ ORIGIN                                 | 0   
+ DEST                                   | 0   
+ DEP_DELAY                              | 0   
+ DEP_DELAY_NEW                          | 0   
+ DEP_DEL15                              | 0   
+ ARR_DELAY                              | 0   
+ ARR_DELAY_NEW                          | 0   
+ ARR_DEL15                              | 0   
+ CRS_ELAPSED_TIME                       | 0   
+ ACTUAL_ELAPSED_TIME                    | 0   
+ AIR_TIME                               | 0   
+ DISTANCE                               | 0   
+ CARRIER_DELAY                          | 0   
+ WEATHER_DELAY                          | 0   
+ NAS_DELAY                              | 0   
+ SECURITY_DELAY                         | 0   
+ LATE_AIRCRAFT_DELAY                    | 0   
+ CRS_DEP_1hrpre                         | 0   
+ CRS_DEP_1hrpost                        | 0   
+ DEP_1hrpre_num                         | 0   
+ DEP_1hrpost_num                        | 0   
+ Arr_1hrpre_num                         | 0   
+ Arr_1hrpost_num                        | 0   
+ max_temp_f                             | 0   
+ min_temp_f                             | 0   
+ max_dewpoint_f                         | 0   
+ min_dewpoint_f                         | 0   
+ precip_in                              | 0   
+ avg_wind_speed_kts                     | 0   
+ snow_in                                | 0   
+ avg_feel                               | 0   
+ FAA_class                              | 0   
+ scheduled_Turnarnd                     | 0   
+ Actual_Turnarnd                        | 0   
+ Diff_in_turnarnd                       | 0   
+ longTurnaround                         | 0   
+ Scheduled_DEP                          | 0   
+ Scheduled_ARR_Ori                      | 0   
+ Actual_ARR_dt_Ori                      | 0   
+ Scheduled_DEP_EST                      | 0   
+ Actual_DEP_dt_EST                      | 0   
+ Scheduled_ARR_EST                      | 0   
+ Actual_ARR_dt_EST                      | 0   
+ Scheduled_ARR_Local                    | 0   
+ Actual_ARR_dt_Local                    | 0   
+ late_airjet_when_turnaround_within_180 | 0   
+ affected_turnaround_lessthan120        | 0   
+ affected_turnaround_lessthan90         | 0   
+ affected_turnaround_lessthan60         | 0   
+ affected_turnaround_lessthan45         | 0   
+ day_of_week                            | 0   
+
+============================================================
+DESCRIPTIVE STATISTICS (numeric columns)
+============================================================
++-------+------------------+-----------------+------------------+------------------+------------------+-------------------+------------------+-----------------+-----------------+-------------------+------------------+--------------------+-------------------+------------------+------------------+------------------+------------------+-------------------+------------------+--------------------+------------------+------------------+------------------+-----------------+
+|summary|DEP_DELAY         |DEP_DELAY_NEW    |ARR_DELAY         |ARR_DELAY_NEW     |CRS_ELAPSED_TIME  |ACTUAL_ELAPSED_TIME|AIR_TIME          |DISTANCE         |CARRIER_DELAY    |WEATHER_DELAY      |NAS_DELAY         |SECURITY_DELAY      |LATE_AIRCRAFT_DELAY|max_temp_f        |min_temp_f        |max_dewpoint_f    |min_dewpoint_f    |precip_in          |avg_wind_speed_kts|snow_in             |avg_feel          |scheduled_Turnarnd|Actual_Turnarnd   |Diff_in_turnarnd |
++-------+------------------+-----------------+------------------+------------------+------------------+-------------------+------------------+-----------------+-----------------+-------------------+------------------+--------------------+-------------------+------------------+------------------+------------------+------------------+-------------------+------------------+--------------------+------------------+------------------+------------------+-----------------+
+|count  |5559465           |5462439          |5445526           |5445526           |5559463           |5445526            |5445526           |5559465          |1170591          |1170591            |1170591           |1170591             |1170591            |5559465           |5559465           |5559465           |5559465           |5559465            |5559465           |5559465             |5559465           |4202595           |4159334           |4104981          |
+|mean   |12.78428194079826 |15.88023024147272|7.448734612597571 |15.712342756236955|148.81463461488997|143.54830773005216 |117.78790552097263|858.7224464944019|1.886368509581912|0.16846618502961325|1.4475337671313038|0.015958605524901526|1.695007906262734  |73.56659588647469 |54.84688077000215 |53.78060766638481 |43.56073701336256 |0.09770057442579629|7.180636756077155 |0.023974161344663094|63.207788051690244|82.0568377395395  |91.30113114263004 |9.519265497209366|
+|stddev |54.004642952669215|53.5024952774428 |56.260246522869934|53.05209799754664 |74.4561066268431  |74.44299481436786  |72.26394569763154 |610.4852696374084|2.436824279734309|0.9181546204794314 |2.1918062427996747|0.27722916597098896 |2.3749725191332316 |17.291961539289474|16.099458231762405|15.720075591612309|18.049803422993875|0.36734308146996325|2.97247227675027  |0.2903969008746827  |18.80894894202523 |93.31170000276781 |101.39735885319791|44.27600011128147|
+|min    |-72               |0.0              |-119.0            |0.0               |-5.0              |23.0               |9.0               |21               |0.0              |0.0                |0.0               |0.0                 |0.0                |2                 |-13               |-9.0              |-31.0             |0.0                |0.3475905         |0.0                 |-19.178936        |0.0               |1.0               |-1016.0          |
+|max    |5764              |5764.0           |5780.0            |5780.0            |1425.0            |795.0              |724.0             |5095             |9.0              |9.0                |9.0               |9.0                 |9.0                |119               |97                |84.0              |78.1              |22.5               |26.67757          |11.5                |105.18889         |1229.0            |4435.0            |4226.0           |
++-------+------------------+-----------------+------------------+------------------+------------------+-------------------+------------------+-----------------+-----------------+-------------------+------------------+--------------------+-------------------+------------------+------------------+------------------+------------------+-------------------+------------------+--------------------+------------------+------------------+------------------+-----------------+
+
+============================================================
+ARR_DELAY — distribution stats
+============================================================
++-------+------------------+
+|summary|         ARR_DELAY|
++-------+------------------+
+|  count|           5445526|
+|   mean| 7.448734612597571|
+| stddev|56.260246522869934|
+|    min|            -119.0|
+|    max|            5780.0|
++-------+------------------+
+
+Delay category breakdown:
++--------------------+-------+
+|            category|  count|
++--------------------+-------+
+|               Early|3279436|
+|  On-time (0-15 min)|1034507|
+|Minor delay (15-6...| 747145|
+|Major delay (>60 ...| 384438|
+|                NULL| 113939|
++--------------------+-------+
+
+============================================================
+AVG ARR_DELAY by day_of_week
+============================================================
++-----------+------------------+-------------------+------------+
+|day_of_week|     avg_arr_delay|  pct_delayed_15min|flight_count|
++-----------+------------------+-------------------+------------+
+|     Friday| 9.776492710383472|0.23771044615211043|      812201|
+|     Monday| 7.298544459671248| 0.2127436049472625|      828039|
+|   Saturday| 7.138336083875352| 0.2089247964623055|      699773|
+|     Sunday| 9.670625648766121|0.23521639089739046|      806842|
+|   Thursday| 8.307622653629732|0.22624352219593696|      823381|
+|    Tuesday|3.7270555641384826|0.18154448545496799|      788615|
+|  Wednesday| 6.037366021960958|0.20017970860981635|      800614|
++-----------+------------------+-------------------+------------+
+
+============================================================
+AVG ARR_DELAY by MONTH
+============================================================
++-----+-------------------+-------------------+------------+
+|MONTH|      avg_arr_delay|  pct_delayed_15min|flight_count|
++-----+-------------------+-------------------+------------+
+|    1|  7.766737390545529|0.22356516791930633|      483190|
+|    2|  4.283401311231723|0.19214270311933676|      452629|
+|    3|  8.998107856173219|0.24019295096922683|      512573|
+|    4|  9.681588811995386|0.23643310265282583|      498023|
+|    5|  4.283814943825737| 0.1874130402786636|      513203|
+|    6|   15.0778814055133|0.27981715451779365|      505769|
+|    7| 17.416142805498833| 0.2955495412754399|      528232|
+|    8|  8.647724456449694|0.22262460303585116|      535350|
+|    9|  5.731222318754291|0.19147372066319557|      503005|
+|   10| 1.1570048447122203| 0.1582250649610234|      527896|
+|   11|-1.2974124009765433|0.13671205011905885|      499595|
++-----+-------------------+-------------------+------------+
+
+============================================================
+AVG ARR_DELAY by MKT_CARRIER
+============================================================
++-----------+------------------+-------------------+------------+
+|MKT_CARRIER|     avg_arr_delay|  pct_delayed_15min|flight_count|
++-----------+------------------+-------------------+------------+
+|         F9|19.423560841670657| 0.3256110477706792|      148688|
+|         B6|19.318061740508718| 0.3181327780565015|      233496|
+|         G4|17.516078277116726|0.28563936145802604|       30648|
+|         NK|15.517209119109754| 0.2975751905782926|      228869|
+|         HA|10.917577129917916| 0.2534201339749033|       53074|
+|         AA| 8.864370899842978|0.21033424207102283|     1276468|
+|         UA| 7.090631077899478| 0.2084367642542737|      948719|
+|         WN| 6.544257727635234| 0.2279935992629871|     1191862|
+|         AS|3.2530460838024453|0.18770870045185575|      295177|
+|         DL|2.2166842899162162|0.16381631690953014|     1152464|
++-----------+------------------+-------------------+------------+
+
+============================================================
+TOP 20 ORIGINS by avg delay
+============================================================
++------+------------------+------------+
+|ORIGIN|     avg_arr_delay|flight_count|
++------+------------------+------------+
+|   FLL| 18.39778665460758|       82198|
+|   SJU| 17.08080460166018|       29463|
+|   MCO|16.827008700624976|      149514|
+|   MIA|15.139045681281177|       92947|
+|   PBI|12.382175732217574|       24329|
+|   DFW| 12.33557088052263|      270625|
+|   LAS| 11.63390540119719|      177310|
+|   IAH|11.541671681096426|      142408|
+|   DEN| 11.40648227758113|      274317|
+|   JAX|10.126200378071834|       26981|
+|   BWI|  9.69568424085278|       88413|
+|   CLT|  9.15793835666822|      206956|
+|   BDL| 8.603391947727491|       21107|
+|   EWR| 8.564877563593447|      138594|
+|   MDW| 8.473516289686657|       78846|
+|   ORD|  8.31399783153251|      271584|
+|   MEM| 8.240746656930309|       22320|
+|   AUS|  8.21940833441762|       86628|
+|   CHS| 8.029933336238072|       23361|
+|   BOS| 7.704484727621154|      132846|
++------+------------------+------------+
+only showing top 20 rows
+============================================================
+AVG delay by cause type
+============================================================
++-----------------+-------------------+------------------+--------------------+-------------------+
+|    CARRIER_DELAY|      WEATHER_DELAY|         NAS_DELAY|      SECURITY_DELAY|LATE_AIRCRAFT_DELAY|
++-----------------+-------------------+------------------+--------------------+-------------------+
+|1.886368509581912|0.16846618502961325|1.4475337671313038|0.015958605524901526|  1.695007906262734|
++-----------------+-------------------+------------------+--------------------+-------------------+
+
+============================================================
+PEARSON CORRELATION: weather features vs ARR_DELAY
+============================================================
+  max_temp_f                    : +0.0419
+  min_temp_f                    : +0.0552
+  max_dewpoint_f                : +0.0686
+  min_dewpoint_f                : +0.0606
+  precip_in                     : +0.0712
+  avg_wind_speed_kts            : +0.0167
+  snow_in                       : +0.0369
+  avg_feel                      : +0.0475
+============================================================
+TURNAROUND IMPACT ON DELAYS
+============================================================
++------------------------+---------------------+-------------------+
+|avg_scheduled_turnaround|avg_actual_turnaround|avg_turnaround_diff|
++------------------------+---------------------+-------------------+
+|        82.0568377395395|    91.30113114263004|  9.519265497209366|
++------------------------+---------------------+-------------------+
+
+Correlation: Diff_in_turnarnd vs ARR_DELAY = 0.48473877461628784
+Correlation: longTurnaround vs ARR_DELAY = -0.01913393028928568
+Saved: plot_01_delay_distribution.png
+Saved: plot_02_delay_by_dow.png
+Saved: plot_03_delay_by_month.png
+Saved: plot_04_delay_causes.png
+Saved: plot_05_weather_correlations.png
+Saved: plot_06_dep_vs_arr_delay.png
+
+============================================================
+EDA COMPLETE — check ~/flight_analysis/ for all plots
+============================================================
